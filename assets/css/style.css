@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 250px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 1fr 1fr 1fr;
+    grid-template-areas: "topo topo topo topo topo"
+                         "sidebar navbar navbar navbar navbar" 
+                         "sidebar main main main main"
+                         "sidebar footer footer footer footer";                                                                        
+}
+
+.topo{
+    background-color: FFFFFF;
+    grid-area: topo;
+    align-self: center;
+    margin: 30px;
+}    
+
+nav{
+    background: #F8F8F8;
+    grid-area: navbar;
+}
+
+aside{
+    background: FFFFFF;
+    grid-area: sidebar;
+}
+
+main{
+    background: #F8F8F8;
+    grid-area: main;
+}
+
+footer{
+    background: #F8F8F8;
+    grid-area: footer;
+}
+
+.logo{
+    justify-self: start;
+}
+
+.pesquisa{
+    justify-self: center;
+}
+
+.dadosusuario{
+    justify-self: end;
+
+}
